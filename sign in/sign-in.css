@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  background-size: cover;  
+  overflow: hidden;
+  border-radius: 5%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  max-width: 100%;
+}
+.header {
+  background-color: rgb(201, 201, 201);
+  border-bottom: 2px solid black;
+  padding: 20px 30px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+form {
+  padding: 20px 40px;
+}
+
+.form-controls {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form-controls label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-controls input {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.form-controls.success input {
+  border-color: green;
+}
+
+.form-controls.failure input {
+  border-color: red;
+}
+
+.form-controls i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-controls.success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+.form-controls.failure i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.form-controls small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-controls.failure small {
+  visibility: visible;
+  color: red;
+}
+
+.form button {
+  background-color: rgb(201, 201, 201);
+  border: 1px solid #131313;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1em;
+}
